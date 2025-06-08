@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Facultad de Ciencias Económicas - UNMSM</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    :root {
+      --primary-color: #003366;
+      --secondary-color: #005bac;
+      --highlight-color: #f1c40f;
+    }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+    }
+    .hero {
+      /* background: url('https://economia.unmsm.edu.pe/img/banner/banner-01.jpg') center/cover no-repeat; */
+      color: white;
+      height: 60vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-shadow: 0 0 5px #000;
+    }
+    .section-title {
+      color: var(--primary-color);
+      border-left: 5px solid var(--highlight-color);
+      padding-left: 10px;
+      margin-bottom: 20px;
+    }
+    footer {
+      background-color: var(--primary-color);
+      color: white;
+      padding: 20px 0;
+    }
+
+    #ultimasNoticiasCarousel {
+        margin-top: 1rem;
+    }
+
+    .carousel-item > div {
+        min-height: 200px;
+    }
+
+   
+    .hero {
+        /* position: relative; */
+        height: 80vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        /* overflow: hidden; */
+    }
+
+    .video-wrapper {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        
+        /* z-index: 0;  */
+    }
+
+    .bg-video {
+        width: 68%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .hero-content {
+        /* z-index:1; */
+        /* position: relative; */
+        text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+  </style>
+</head>
+<body>
+  <header class="bg-light shadow-sm">
+    <div class="container d-flex justify-content-between align-items-center py-2">
+      <h1 class="h4 text-primary">Facultad de Ciencias Económicas - UNMSM</h1>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Buscar" />
+        <button class="btn btn-outline-primary" type="submit">Buscar</button>
+      </form>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: var(--primary-color);">
+      <div class="container">
+        <a class="navbar-brand" href="#">FCE-UNMSM</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link active" href="#">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Nosotros</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="carrerasDropdown" role="button" data-bs-toggle="dropdown">Carreras</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Economía</a></li>
+                <li><a class="dropdown-item" href="#">Economía Pública</a></li>
+                <li><a class="dropdown-item" href="#">Economía Internacional</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">Investigación</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Carrusel de noticias -->
+  
+    <section class="container my-4">
+        <div id="carouselNoticias" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner" id="carousel-inner-noticias"></div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselNoticias" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselNoticias" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div>
+        
+        <div class="hero-content">
+            <h2 class="display-4">Bienvenidos a la Facultad de Ciencias Económicas</h2>
+            <p>Formando líderes en economía con visión global e impacto nacional.</p>
+        </div> 
+    </section>
+
+    <section class="hero text-center position-relative overflow-hidden">
+
+        <!-- <div class="hero-content-position-relative"> -->
+
+        <div class="video-wrapper">
+            <video autoplay muted loop playsinline class="bg-video">
+                <source src="./videos/fce.MP4" type="video/mp4">
+                Tu navegador no soporta videos en HTML5.
+            </video>
+        </div>
+              
+    </section>
+
+    <main class="container my-5">
+        <section>
+        <h3 class="section-title">Nuestras Carreras</h3>
+        <div class="row g-4">
+            <div class="col-md-4">
+            <div class="card h-100">
+                <div class="card-body">
+                <h5 class="card-title">Economía</h5>
+                <p class="card-text">Programa orientado al análisis económico y políticas públicas.</p>
+                <a href="#" class="btn btn-primary">Ver más</a>
+                </div>
+            </div>
+            </div>
+            <div class="col-md-4">
+            <div class="card h-100">
+                <div class="card-body">
+                <h5 class="card-title">Economía Pública</h5>
+                <p class="card-text">Enfocado en la gestión pública y finanzas gubernamentales.</p>
+                <a href="#" class="btn btn-primary">Ver más</a>
+                </div>
+            </div>
+            </div>
+            <div class="col-md-4">
+            <div class="card h-100">
+                <div class="card-body">
+                <h5 class="card-title">Economía Internacional</h5>
+                <p class="card-text">Especialización en comercio y finanzas globales.</p>
+                <a href="#" class="btn btn-primary">Ver más</a>
+                </div>
+            </div>
+            </div>
+        </div>
+        </section>
+
+        <!-- SECCIÓN: Últimas Noticias (solo títulos y detalles con enlaces) -->
+        <section class="container my-5">
+            <h2 class="mb-3">Últimas Noticias</h2>
+            <div id="ultimasNoticiasCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner" id="carousel-inner-ultimas-noticias"></div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#ultimasNoticiasCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#ultimasNoticiasCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </section>
+
+        
+       
+
+        <!-- SECCIÓN: Institucional -->
+        <section class="container my-5">
+        <h2 class="mb-3">Institucional</h2>
+        <div class="row">
+            <div class="col-md-6 mb-3">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                <h5 class="card-title">Programación de Exámenes Parciales</h5>
+                <p class="card-text">Consulta el calendario oficial de exámenes parciales por escuela profesional.</p>
+                <a href="docs/parciales.pdf" class="btn btn-primary" target="_blank">Ver programación</a>
+                </div>
+            </div>
+            </div>
+            <div class="col-md-6 mb-3">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                <h5 class="card-title">Programación de Exámenes Finales</h5>
+                <p class="card-text">Consulta el cronograma detallado de los exámenes finales del semestre.</p>
+                <a href="docs/finales.pdf" class="btn btn-primary" target="_blank">Ver programación</a>
+                </div>
+            </div>
+            </div>
+        </div>
+        </section>
+
+        <!-- SECCIÓN: Revistas de la Facultad -->
+        <section class="container my-5">
+        <h2 class="mb-3">Revistas Académicas</h2>
+        <div class="row">
+            <div class="col-md-6 mb-3">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                <h5 class="card-title">Pensamiento Crítico</h5>
+                <p class="card-text">Revista académica enfocada en economía y ciencias sociales.</p>
+                <a href="https://revistasinvestigacion.unmsm.edu.pe/index.php/pensamientocritico" class="btn btn-outline-secondary" target="_blank">Acceder</a>
+                </div>
+            </div>
+            </div>
+            <div class="col-md-6 mb-3">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                <h5 class="card-title">Revista de la Facultad</h5>
+                <p class="card-text">Publicación oficial de la Facultad de Ciencias Económicas con investigaciones destacadas.</p>
+                <a href="https://revistasinvestigacion.unmsm.edu.pe/index.php/economia" class="btn btn-outline-secondary" target="_blank">Acceder</a>
+                </div>
+            </div>
+            </div>
+        </div>
+        </section>
+  </main>
+
+  <footer class="text-center">
+    <div class="container">
+      <p>&copy; 2025 Facultad de Ciencias Económicas - UNMSM</p>
+      <p><a href="#" class="text-white">Política de privacidad</a></p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+        fetch('noticias.json')
+        .then(res=>res.json())
+        .then(noticias=>{
+            const hoy=new Date().toISOString().split('T')[0],
+            cont=document.getElementById('carousel-inner-noticias');
+            let activo=true;
+            noticias.forEach(n=>{
+            if(n.fecha_limite>=hoy){
+                const item=document.createElement('div');
+                item.className='carousel-item'+(activo?' active':'');
+                activo=false;
+                item.innerHTML=`
+                <img src="${n.imagen}" class="d-block w-100" alt="${n.titulo}">
+                <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
+                    <h5>${n.titulo}</h5><p>${n.descripcion}</p>
+                </div>`;
+                cont.appendChild(item);
+            }
+            });
+        })
+        .catch(e=>console.error('Error cargando noticias:',e));
+    </script>
+    
+    <script>
+        fetch('ultimas-noticias.json')
+        .then(res => res.json())
+        .then(ultimasNoticias => {
+            const hoy = new Date().toISOString().split('T')[0];
+            const container = document.getElementById('carousel-inner-ultimas-noticias');
+            let activo = true;
+            ultimasNoticias.forEach(n => {
+                if (n.fecha_limite >= hoy) {
+                    const item = document.createElement('div');
+                    item.className = 'carousel-item' + (activo ? ' active' : '');
+                    activo = false;
+                    item.innerHTML = `
+                    <div class="d-flex flex-column justify-content-center align-items-start p-4 bg-light h-100">
+                        <a href="${n.enlace}" class="text-decoration-none" target="_blank">
+                        <h5>${n.titulo}</h5>
+                        <p>${n.descripcion}</p>
+                        </a>
+                    </div>`;
+                    container.appendChild(item);
+                }
+            });
+        })
+        .catch(e => console.error('Error cargando últimas noticias:', e));
+    </script>
+</body>
+</html>

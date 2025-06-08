@@ -1,0 +1,20 @@
+[
+  {
+    "titulo": "Convocatoria de becas 2025",
+    "descripcion": "Consulta los requisitos para postular a las becas académicas.",
+    "imagen": "./img/noticias/noticia1.png",
+    "fecha_limite": "2025-06-30"
+  },
+  {
+    "titulo": "Nuevo curso de especialización",
+    "descripcion": "Economía digital y análisis de datos para estudiantes y egresados.",
+    "imagen": "img/noticias/noticia2.png",
+    "fecha_limite": "2025-07-15"
+  },
+  {
+    "titulo": "Feria laboral 2025",
+    "descripcion": "Conéctate con empresas del sector económico y encuentra tu oportunidad.",
+    "imagen": "img/noticias/noticia3.png",
+    "fecha_limite": "2025-06-01"
+  }
+]
