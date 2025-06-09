@@ -53,6 +53,37 @@ nav ul li a {
   font-weight: bold;
 }
 
+.redes-sociales {
+  position: fixed;
+  top: 90%;
+  right: 20px;
+  transform: translateY(-80%);
+  z-index: 1000;
+  display: flex;
+  flex-direction: column; /* Asegura disposición vertical */
+  gap: 0px; /* Espacio entre íconos */  
+}
+
+.redes-sociales a {
+  color: #1877f2; /* Azul de Facebook */
+  font-size: 50px;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+.redes-sociales a:hover {
+  transform: scale(1.2);
+  color: #145dbf;
+}
+
+.redes-sociales a:nth-child(2) {
+  color: #25d366; /* verde de WhatsApp */
+}
+
+.redes-sociales a:nth-child(2):hover {
+  color: #1ebe5b;
+}
+
 .hero {
   display: flex;
   justify-content: space-between;
@@ -66,6 +97,11 @@ nav ul li a {
   width: 40%;
   border-radius: 10px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease-in-out;
+}
+
+.hero img:hover {
+  transform: scale(1.05);
 }
 
 .hero-text {

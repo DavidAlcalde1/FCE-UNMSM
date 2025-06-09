@@ -47,6 +47,38 @@ nav ul li a {
   font-weight: bold;
 }
 
+/*Redes Sociales*/
+.redes-sociales {
+  position: fixed;
+  top: 90%;
+  right: 20px;
+  transform: translateY(-80%);
+  z-index: 1000;
+  display: flex;
+  flex-direction: column; /* Asegura disposición vertical */
+  gap: 0px; /* Espacio entre íconos */  
+}
+
+.redes-sociales a {
+  color: #1877f2; /* Azul de Facebook */
+  font-size: 50px;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+.redes-sociales a:hover {
+  transform: scale(1.2);
+  color: #145dbf;
+}
+
+.redes-sociales a:nth-child(2) {
+  color: #25d366; /* verde de WhatsApp */
+}
+
+.redes-sociales a:nth-child(2):hover {
+  color: #1ebe5b;
+}
+
 /* Sección Hero */
 .hero {
   display: flex;
@@ -61,6 +93,11 @@ nav ul li a {
   width: 40%;
   border-radius: 10px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease-in-out;
+}
+
+.hero img:hover {
+  transform: scale(1.05);
 }
 
 .hero-text {
@@ -84,6 +121,11 @@ nav ul li a {
   text-decoration: none;
   border-radius: 5px;
   margin-top: 1rem;
+  transition: transform 0.3s ease-in-out;
+}
+
+.btn:hover {
+  transform: scale(1.05);
 }
 
 /* Secciones de información */
@@ -110,20 +152,7 @@ nav ul li a {
   gap: 1rem;
 }
 
-/* .formulario input, .formulario textarea {
-  padding: 0.75rem;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
 
-.formulario button {
-  background: #0c2340;
-  color: white;
-  border: none;
-  padding: 0.75rem;
-  border-radius: 5px;
-  cursor: pointer;
-} */
 
   #contacto {
     display: flex;
@@ -228,37 +257,6 @@ footer {
     text-align: center;
   }
 
-  /* .columns {
-    flex-direction: column;
-    gap: 3rem;
-    height: 300px;
-    width: 200px;
-  }
-
-  .column {
-    flex:1;
-    width: 100%;
-    box-sizing: border-box;  
-  }
-
-  .cursos {
-    display: flex;
-    justify-content: center;
-    align-items: center;      
-  }
-
-  .cursos h2 {
-    padding-left:0;
-    text-align: center;
-  }
-
-  .cursos-grid {
-    gap:2rem;
-  }
-
-  .curso-card {
-    margin: 1rem 0;
-  } */
 
 
   .info-curso h2 {
