@@ -17,6 +17,14 @@ a {
   color: #0c2340; 
 }
 
+h2 {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+h3 {
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+}
+
 /* Encabezado */
 header {
   background: #0c2340;
@@ -122,6 +130,7 @@ nav ul li a {
   border-radius: 5px;
   margin-top: 1rem;
   transition: transform 0.3s ease-in-out;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
 .btn:hover {
