@@ -9,6 +9,7 @@ window.addEventListener("scroll", function () {
   }
 });
 
+
 // --- Manejo del formulario de contacto ---
 document.getElementById("formulario").addEventListener("submit", function (e) {
   e.preventDefault();

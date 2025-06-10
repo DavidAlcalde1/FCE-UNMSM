@@ -41,6 +41,11 @@ header {
   z-index: 1000;
 }
 
+header.scrolled {
+  background-color: rgba(0, 32, 96, 0.8); /* Azul con transparencia */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Sombra al hacer scroll */
+}
+
 .logo img {
   height: 50px;
   margin-right: 10px;
