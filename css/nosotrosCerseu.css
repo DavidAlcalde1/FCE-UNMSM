@@ -9,6 +9,7 @@ body {
     line-height: 1.6;
     color: #222;
     background: #f9f9f9;
+    padding-top: 100px;
 }
 
 a {
@@ -18,16 +19,26 @@ a {
 
 /* Encabezado */
 header {
-    background: #0c2340;
-    color: white;
-    padding: 1rem 5rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  position:fixed;
+  top: 0;
+  width: 100%;
+  background: #0c2340;
+  color: white;
+  padding: 1rem 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;  
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  z-index: 1000;
+}
+
+header.scrolled {
+  background-color: rgba(0, 32, 96, 0.8); /* Azul con transparencia */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Sombra al hacer scroll */
 }
 
 .logo img {
-    height: 50px;
+    height: 30px;
     margin-right: 10px;
 }
 
@@ -36,14 +47,47 @@ nav ul {
     list-style: none;
 }
 
-nav ul li {
+/* nav ul li {
     margin-left: 20px;
-}
+} */
 
 nav ul li a {
+    margin-left: 20px;
+    margin-right: 6px;
     color: white;
     text-decoration: none;
     font-weight: bold;
+}
+
+.redes-sociales {
+  position: fixed;
+  top: 90%;
+  right: 20px;
+  transform: translateY(-80%);
+  z-index: 1000;
+  display: flex;
+  flex-direction: column; /* Asegura disposición vertical */
+  gap: 0px; /* Espacio entre íconos */  
+}
+
+.redes-sociales a {
+  color: #1877f2; /* Azul de Facebook */
+  font-size: 50px;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+.redes-sociales a:hover {
+  transform: scale(1.2);
+  color: #145dbf;
+}
+
+.redes-sociales a:nth-child(2) {
+  color: #25d366; /* verde de WhatsApp */
+}
+
+.redes-sociales a:nth-child(2):hover {
+  color: #1ebe5b;
 }
 
 /* Sección Hero */
@@ -60,6 +104,11 @@ nav ul li a {
     width: 40%;
     border-radius: 10px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease-in-out;
+}
+
+.hero img:hover {
+  transform: scale(1.05);
 }
 
 .hero-text {
@@ -68,25 +117,17 @@ nav ul li a {
 
 .hero-text h2 {
     font-size: 2rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
 }
 
 .hero-text p {
     font-size: 1.2rem;
 }
 
-.btn {
-    display: inline-block;
-    background: #0c2340;
-    color: white;
-    padding: 0.75rem 1.5rem;
-    text-decoration: none;
-    border-radius: 5px;
-    margin-top: 1rem;
+.hero-p, .hero-h {
+  text-align: left;
+  text-shadow: 2px 2px 4px rgb(51, 50, 50, 0.5);
 }
-
-
-
 
 
 main {
